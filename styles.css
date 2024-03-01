@@ -331,7 +331,7 @@ ul li a:hover {
 }
 .about-me-photos {
   display: flex;
-  width: 50%;
+  width: 80%;
   overflow: hidden;
 }
 .about-me-text {
@@ -361,7 +361,7 @@ ul li a:hover {
     flex-direction: column;
   }
   .about-me-text {
-    padding: 7rem 5rem;
+    padding: 2rem 1rem;
     width: 100%;
   }
   .about-me-photos {
