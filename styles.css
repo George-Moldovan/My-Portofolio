@@ -457,6 +457,90 @@ ul li a:hover {
   font-size: 2rem;
 }
 
+/*-------------------Back to top button-------------------- */
+
+.form-container {
+  width: 50%;
+  margin: auto;
+  padding: 5rem;
+  background-color: #4e4129;
+}
+label[for="name"],
+label[for="phone"],
+label[for="email"],
+label[for="wedding-location"],
+label[for="date"],
+label[for="message"] {
+  opacity: 0;
+}
+
+input[type="date"]::before {
+  color: #646464;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"] {
+  text-transform: uppercase;
+}
+
+input[type="date"]:active {
+  color: #999;
+}
+input[type="date"]:focus {
+  color: #999;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  border: 1px solid #646464;
+  box-sizing: border-box;
+  background-color: #242424;
+  /* color: #fcf2df; */
+  font-size: 1.3rem;
+}
+input[type="submit"] {
+  background-color: #242424;
+  color: #fcf2df;
+  padding: 1rem 3rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all ease 0.4s;
+  margin: auto;
+  max-width: 30%;
+}
+input[type="submit"]:hover {
+  background-color: #3d3d3d;
+}
+#error {
+  color: rgb(255, 39, 39);
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+#success-message {
+  color: #ffdd03;
+  font-size: 1.2;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+@media (max-width: 1500px) {
+  .form-container {
+    width: 85%;
+    /* background-color: #191919; */
+    padding: 2rem;
+  }
+}
 /* ===============================================================
    ========================= FOOTER =============================
    =============================================================== */

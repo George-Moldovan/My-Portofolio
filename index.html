@@ -198,7 +198,7 @@
         <div class="about-me-photos">
           <img src="./img/About-me/me-1.jpg" alt="family-photo-in-nature" />
           <img src="./img/About-me/me-2.jpg" alt="family-photo-in-nature" />
-          <!-- <img src="./img/About-me/me-3.jpg" alt="family-photo-in-nature" /> -->
+          <img src="./img/About-me/me-3.jpg" alt="family-photo-in-nature" />
         </div>
       </div>
     </section>
@@ -215,10 +215,60 @@
           ></a>
         </div>
       </div>
+
       <a href="#" class="back-to-top">
         <i class="fa-solid fa-angle-up"></i>
         <span class="back-to-top-text">Back to top</span>
       </a>
+
+      <!-- ================CONTACT FORM============== -->
+      <div class="form-container">
+        <h2>Shoot me an email</h2>
+        <div id="error" class=""></div>
+        <div id="success-message" class=""></div>
+        <form action="" method="post" id="form">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" />
+
+          <label for="phone">Phone Number</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            pattern="[0-9]{10}"
+            placeholder="Your phone number"
+          />
+
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Valid email"
+          />
+
+          <label for="wedding-location">Wedding Location</label>
+          <input
+            type="text"
+            id="wedding-location"
+            name="wedding_location"
+            placeholder="Your wedding location"
+          />
+
+          <label for="date">Wedding Date</label>
+          <input type="date" id="date" name="date" />
+
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="Your message here"
+          ></textarea>
+
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
     </section>
 
     <footer class="footer">&copy George Moldovan - 2024</footer>
